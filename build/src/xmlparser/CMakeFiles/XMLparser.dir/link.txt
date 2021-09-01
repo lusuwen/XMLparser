@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++0x  -std=c++17 -pthread -g -ftest-coverage -fprofile-arcs -Wno-deprecated   CMakeFiles/XMLparser.dir/src/header_xml_parser.cc.o CMakeFiles/XMLparser.dir/src/main_parser.cpp.o CMakeFiles/XMLparser.dir/src/xml_parser.cc.o  -o ../../../src/bin/XMLparser  ../../../src/lib/libtinyxml.a 

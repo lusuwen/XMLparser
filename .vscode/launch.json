@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        //VTD in loop
+        {
+            "name": "planning_WithVTD_debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/bin/XMLparser",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/src/bin/", //"${fileDirname}",
+            //"cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            //"preLaunchTask": "C/C++: cpp build active file",
+            "preLaunchTask": "app_VTD_build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
