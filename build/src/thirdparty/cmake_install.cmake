@@ -1,4 +1,4 @@
-# Install script for directory: /home/LSW/opendrive/src/thirdparty
+# Install script for directory: /home/LSW/opendrive_test/src/thirdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/LSW/opendrive/build/src/thirdparty/tinyxml2/cmake_install.cmake")
+  include("/home/LSW/opendrive_test/build/src/thirdparty/tinyxml2/cmake_install.cmake")
 
 endif()
 

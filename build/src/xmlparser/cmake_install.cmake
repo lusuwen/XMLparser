@@ -1,4 +1,4 @@
-# Install script for directory: /home/LSW/opendrive/src/xmlparser
+# Install script for directory: /home/LSW/opendrive_test/src/xmlparser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++0x  -std=c++17 -pthread -g -ftest-coverage -fprofile-arcs -W
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/LSW/opendrive/src/thirdparty/tinyxml2/inc -I/home/LSW/opendrive/src/xmlparser/inc 
+CXX_INCLUDES = -I/home/LSW/opendrive_test/src/thirdparty/tinyxml2/inc -I/home/LSW/opendrive_test/src/xmlparser/inc 
 

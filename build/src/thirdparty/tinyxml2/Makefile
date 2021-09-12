@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/LSW/opendrive
+CMAKE_SOURCE_DIR = /home/LSW/opendrive_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/LSW/opendrive/build
+CMAKE_BINARY_DIR = /home/LSW/opendrive_test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/LSW/opendrive/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/LSW/opendrive/build/CMakeFiles /home/LSW/opendrive/build/src/thirdparty/tinyxml2/CMakeFiles/progress.marks
-	cd /home/LSW/opendrive/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/LSW/opendrive/build/CMakeFiles 0
+	cd /home/LSW/opendrive_test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/LSW/opendrive_test/build/CMakeFiles /home/LSW/opendrive_test/build/src/thirdparty/tinyxml2/CMakeFiles/progress.marks
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/LSW/opendrive_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/LSW/opendrive/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/clean
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/LSW/opendrive/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/preinstall
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/LSW/opendrive/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/preinstall
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/LSW/opendrive/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/LSW/opendrive_test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/rule:
-	cd /home/LSW/opendrive/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/rule
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f CMakeFiles/Makefile2 src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/rule
 .PHONY : src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ tinyxml: src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/rule
 
 # fast build rule for target.
 tinyxml/fast:
-	cd /home/LSW/opendrive/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build
 .PHONY : tinyxml/fast
 
 src/tinyxml2.o: src/tinyxml2.cpp.o
@@ -131,7 +131,7 @@ src/tinyxml2.o: src/tinyxml2.cpp.o
 
 # target to build an object file
 src/tinyxml2.cpp.o:
-	cd /home/LSW/opendrive/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.o
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.o
 .PHONY : src/tinyxml2.cpp.o
 
 src/tinyxml2.i: src/tinyxml2.cpp.i
@@ -140,7 +140,7 @@ src/tinyxml2.i: src/tinyxml2.cpp.i
 
 # target to preprocess a source file
 src/tinyxml2.cpp.i:
-	cd /home/LSW/opendrive/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.i
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.i
 .PHONY : src/tinyxml2.cpp.i
 
 src/tinyxml2.s: src/tinyxml2.cpp.s
@@ -149,7 +149,7 @@ src/tinyxml2.s: src/tinyxml2.cpp.s
 
 # target to generate assembly for a file
 src/tinyxml2.cpp.s:
-	cd /home/LSW/opendrive/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.s
+	cd /home/LSW/opendrive_test/build && $(MAKE) -f src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/build.make src/thirdparty/tinyxml2/CMakeFiles/tinyxml.dir/src/tinyxml2.cpp.s
 .PHONY : src/tinyxml2.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/LSW/opendrive/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/LSW/opendrive_test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

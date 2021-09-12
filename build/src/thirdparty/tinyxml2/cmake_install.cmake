@@ -1,4 +1,4 @@
-# Install script for directory: /home/LSW/opendrive/src/thirdparty/tinyxml2
+# Install script for directory: /home/LSW/opendrive_test/src/thirdparty/tinyxml2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

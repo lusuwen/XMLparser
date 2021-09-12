@@ -1,9 +1,9 @@
-
 #include <iostream>
 
 #include "tinyxml2.h"
 #include "map_msg.h"
 #include "header_xml_parser.h"
+#include "roads_xml_parser.h"
 
 
 bool LoadData(const char* xmlPath, string& strDecl) {
@@ -13,14 +13,18 @@ bool LoadData(const char* xmlPath, string& strDecl) {
     return false;
   }
 
+  //root
   XMLElement* root = doc.RootElement();  //获取根节点，即OpenDRIVE节点
   cout << "RootElement:" << root->Name() << endl;
-  XMLElement* header = root->FirstChildElement("header");  //获取第一个子节点，header
-  XMLElement* road = root->FirstChildElement("road");  //获取第二个子节点，road
-  cout << "header:" << header->Name() << endl;
   
+  //header
   auto P_header = std::make_shared<xml_header>();
   Header_Parse(*root, P_header);
+
+  //road
+  auto P_road = std::make_shared<xml_road>();
+  Road_Parse(*root, P_road);
+
 
   /*while(rootchild) {
     //获取rootchild的属性
@@ -65,7 +69,7 @@ int main(int argc,char* argv[])
     //获取xml文件申明
     string strDecl;
     // string *xodrPath = argv[1]
-    if(LoadData("/home/LSW/opendrive/map/5km_Straight_CountryRoad.xodr",strDecl))
+    if(LoadData("/home/LSW/opendrive_test/map/junction_test_signals.xodr",strDecl))
     {
       cout<<"declaration:"<< strDecl <<endl;
     }

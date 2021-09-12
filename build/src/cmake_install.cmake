@@ -1,4 +1,4 @@
-# Install script for directory: /home/LSW/opendrive/src
+# Install script for directory: /home/LSW/opendrive_test/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/LSW/opendrive/build/src/thirdparty/cmake_install.cmake")
-  include("/home/LSW/opendrive/build/src/xmlparser/cmake_install.cmake")
+  include("/home/LSW/opendrive_test/build/src/thirdparty/cmake_install.cmake")
+  include("/home/LSW/opendrive_test/build/src/xmlparser/cmake_install.cmake")
 
 endif()
 
